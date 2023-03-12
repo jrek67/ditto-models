@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "current": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "value": {
+          "type": "integer"
+        },
+        "auto": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "status",
+        "value",
+        "auto",
+        "statusText",
+        "timestamp"
+      ]
+    },
+    "red": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "statusText",
+        "timestamp"
+      ]
+    },
+    "yellow": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "statusText",
+        "timestamp"
+      ]
+    },
+    "blue": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "statusText",
+        "timestamp"
+      ]
+    },
+    "white": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "statusText",
+        "timestamp"
+      ]
+    },
+    "green": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        },
+        "statusText": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "value",
+        "statusText",
+        "timestamp"
+      ]
+    }
+  },
+  "required": [
+    "current",
+    "green"
+  ]
+}
