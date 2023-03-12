@@ -1,136 +1,34 @@
 {
   "@context": [
-    "https://www.w3.org/2022/wot/td/v1.1"
-  ],
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "andon",
-  "@type": "tm:ThingModel",
-  "properties": {
-    "current": {
-      "type": "object",
-      "properties": {
-        "status": {
-          "type": "string"
-        },
-        "value": {
-          "type": "integer"
-        },
-        "auto": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "status",
-        "value",
-        "auto",
-        "statusText",
-        "timestamp"
-      ]
-    },
-    "red": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "value",
-        "statusText",
-        "timestamp"
-      ]
-    },
-    "yellow": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "value",
-        "statusText",
-        "timestamp"
-      ]
-    },
-    "blue": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "value",
-        "statusText",
-        "timestamp"
-      ]
-    },
-    "white": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "value",
-        "statusText",
-        "timestamp"
-      ]
-    },
-    "green": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "integer"
-        },
-        "statusText": {
-          "type": "string"
-        },
-        "timestamp": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "value",
-        "statusText",
-        "timestamp"
-      ]
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
     }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Dimmable Colored Lamp",
+  "version": {
+    "model": "1.0.0"
   },
-  "required": [
-    "current",
-    "green"
-  ]
+  "links": [
+    {
+      "rel": "tm:extends",
+      "href": "https://eclipse-ditto.github.io/ditto-examples/wot/models/colored-lamp-1.0.0.tm.jsonld",
+      "type": "application/tm+json"
+    }
+  ],
+  "tm:optional": [
+    
+  ],
+  "properties": {
+    "dimmer-level": {
+      "@type": "om2:Percentage",
+      "title": "Dimmer level",
+      "type": "number",
+      "unit": "om2:percent",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "multipleOf": 0.001
+    }
+  }
 }
