@@ -1,4 +1,7 @@
 {
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+  ],
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "andon",
   "@type": "tm:ThingModel",
